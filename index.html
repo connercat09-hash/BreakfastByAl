@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakfast by Al — Menu | Breakfast Food Truck in Newport News, VA</title>
+  <meta name="description" content="Breakfast by Al — locally owned breakfast food truck in Newport News, VA. Full menu: breakfast sandwiches on daily-baked burillo rolls, burritos, omelets, favorites, fill ups, and lunch options. Order on Uber Eats or call (757) 998-9527.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Menu — Breakfast by Al">
+  <meta property="og:description" content="Breakfast sandwiches, burritos, omelets, and lunch options made to order in Newport News, VA.">
+  <meta property="og:image" content="https://tb-static.uber.com/prod/image-proc/processed_images/86dce195195533b6d3a0f928964844c1/9c4d3adb393f25706b737484dc73677e.webp">
+  <meta property="og:url" content="https://your-domain.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Menu — Breakfast by Al">
+  <meta name="twitter:description" content="Breakfast sandwiches, burritos, omelets, and lunch options made to order in Newport News, VA.">
+  <meta name="twitter:image" content="https://tb-static.uber.com/prod/image-proc/processed_images/86dce195195533b6d3a0f928964844c1/9c4d3adb393f25706b737484dc73677e.webp">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Breakfast by Al",
+    "description": "Locally owned breakfast food truck serving made-to-order breakfast sandwiches, burritos, and omelets.",
+    "image": "https://tb-static.uber.com/prod/image-proc/processed_images/86dce195195533b6d3a0f928964844c1/9c4d3adb393f25706b737484dc73677e.webp",
+    "servesCuisine": "Breakfast",
+    "telephone": "+1-757-998-9527",
+    "email": "thedtcafe@gmail.com",
+    "priceRange": "$",
+    "address": {"@type": "PostalAddress", "streetAddress": "Jefferson Ave", "addressLocality": "Newport News", "addressRegion": "VA", "postalCode": "23605", "addressCountry": "US"},
+    "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "08:00", "closes": "15:00"}],
+    "menu": "index.html",
+    "sameAs": ["https://www.facebook.com/p/Breakfast-by-Al-at-Lunchtime-61566742389870/", "https://www.instagram.com/breakfastbyal", "https://www.ubereats.com/store/breakfast-by-al/0iAMrgDERVirBv2kS1FAew"]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Karla:wght@400;700;800&family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <style>
+/* ==========================================================================
+   Breakfast by Al — shared design system
+   Edit the tokens below to change colors site-wide.
+   ========================================================================== */
+:root{
+  /* Brand palette — truck-red forward, bright and clean */
+  --griddle:#26211d;        /* near-black warm charcoal: headings, dark bands */
+  --toast:#4c4540;          /* secondary text: warm gray */
+  --butter:#fffaf4;         /* page background: bright warm white */
+  --card:#ffffff;           /* cards */
+  --red:#d3301f;            /* primary CTA — truck-lettering red */
+  --red-deep:#ab2415;       /* CTA hover */
+  --yolk:#f0a000;           /* small warm accents: stars, ticker trim */
+  --yolk-deep:#cf8700;
+  --spinach:#d3301f;        /* icons & fresh accents now brand red */
+  --maple:#c22a1a;          /* notes / closed states */
+  --line:rgba(38,33,29,.14);
+  --shadow:0 10px 30px rgba(42,26,16,.10);
+  --shadow-lift:0 16px 38px rgba(42,26,16,.16);
+  --radius:20px;
+  --font-display:"Fraunces",Georgia,serif;
+  --font-body:"Karla","Segoe UI",Arial,sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  margin:0;
+  background:var(--butter);
+  color:var(--toast);
+  font-family:var(--font-body);
+  font-size:1.06rem;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+
+h1,h2,h3{
+  font-family:var(--font-display);
+  color:var(--griddle);
+  line-height:1.08;
+  margin:0 0 .5em;
+  font-weight:800;
+}
+h1{font-size:clamp(2.4rem,6vw,4.2rem);letter-spacing:-.02em}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem);letter-spacing:-.015em}
+h3{font-size:1.22rem}
+.eyebrow{
+  display:inline-block;
+  font-size:.8rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--spinach);margin-bottom:14px;
+}
+.section{padding:clamp(56px,9vw,110px) 0}
+.section-head{max-width:640px;margin-bottom:clamp(28px,4vw,48px)}
+.muted{opacity:.85}
+
+/* ------- Editor notes: visible placeholders for info still needed ------- */
+.todo{
+  border:2px dashed var(--maple);
+  color:var(--maple);
+  background:rgba(179,64,31,.06);
+  border-radius:12px;
+  padding:10px 14px;
+  font-size:.92rem;
+  font-weight:700;
+}
+
+/* ------------------------------- Buttons ------------------------------- */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--font-body);font-weight:800;font-size:1rem;
+  padding:15px 30px;border-radius:999px;border:2px solid transparent;
+  text-decoration:none;cursor:pointer;
+  transition:transform .18s ease,box-shadow .18s ease,background .18s ease,color .18s ease;
+}
+.btn-primary{
+  background:var(--red);color:#fff;
+  box-shadow:0 8px 20px rgba(211,48,31,.32);
+}
+.btn-primary:hover{background:var(--red-deep);transform:translateY(-2px);box-shadow:0 12px 26px rgba(211,48,31,.4)}
+.btn-outline{border-color:var(--griddle);color:var(--griddle);background:transparent}
+.btn-outline:hover{background:var(--griddle);color:var(--butter);transform:translateY(-2px)}
+.btn-lg{padding:18px 40px;font-size:1.12rem}
+
+/* ------------------------------ Navigation ----------------------------- */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,246,229,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid transparent;
+  transition:border-color .2s ease,box-shadow .2s ease;
+}
+.nav.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 18px rgba(42,26,16,.07)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-mark{
+  width:44px;height:44px;border-radius:50%;overflow:hidden;
+  background:radial-gradient(circle at 42% 40%,#ff7a4d 0 34%,var(--red) 35% 100%);
+  border:3px solid #fff;box-shadow:0 4px 12px rgba(42,26,16,.18);
+  flex:none;
+}
+.brand-mark img{width:100%;height:100%;object-fit:cover;display:block}
+/* Wordmark matched to the truck lettering: hand-painted comic caps
+   (closest public face: Luckiest Guy), colors sampled from the truck photo. */
+.brand-name{
+  font-family:"Luckiest Guy",var(--font-display),cursive;
+  font-weight:400;font-size:1.32rem;line-height:1;letter-spacing:.02em;
+  text-transform:uppercase;color:#b42d1f;
+  text-shadow:-1px 0 #eec257,1px 0 #eec257,0 -1px #eec257,0 1px #eec257,2px 2px 0 rgba(43,15,8,.3);
+}
+.brand-name .by{font-size:.68em}
+.brand-name .al{
+  color:#4793da;
+  text-shadow:-1px 0 #1d5c93,1px 0 #1d5c93,0 -1px #1d5c93,0 1px #1d5c93,2px 2px 0 rgba(10,30,50,.3);
+}
+.brand-name small{
+  display:block;margin-top:5px;font-family:var(--font-body);font-weight:700;
+  font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--toast);text-shadow:none;
+}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none;margin:0;padding:0}
+.nav-links a:not(.btn){
+  text-decoration:none;font-weight:700;color:var(--griddle);
+  padding:6px 2px;border-bottom:3px solid transparent;
+  transition:border-color .18s ease;
+}
+.nav-links a:not(.btn):hover,.nav-links a[aria-current="page"]{border-bottom-color:var(--red)}
+.nav-links .btn{padding:11px 22px}
+.nav-toggle{
+  display:none;background:none;border:2px solid var(--griddle);border-radius:12px;
+  width:46px;height:42px;cursor:pointer;color:var(--griddle);
+}
+.nav-toggle svg{display:block;margin:auto}
+@media (max-width:820px){
+  .nav-toggle{display:block}
+  .nav-links{
+    position:absolute;left:0;right:0;top:100%;
+    flex-direction:column;align-items:stretch;gap:4px;
+    background:var(--butter);border-bottom:1px solid var(--line);
+    padding:12px clamp(18px,4vw,40px) 20px;
+    box-shadow:0 20px 30px rgba(42,26,16,.12);
+    display:none;
+  }
+  .nav-links.open{display:flex}
+  .nav-links a:not(.btn){padding:12px 4px;border-bottom:1px solid var(--line)}
+  .nav-links .btn{justify-content:center;margin-top:10px}
+}
+
+/* --------------------------------- Hero -------------------------------- */
+.hero{overflow:hidden;position:relative}
+.hero-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,64px);
+  align-items:center;padding:clamp(48px,7vw,96px) 0 clamp(56px,8vw,104px);
+}
+.hero p.lede{font-size:1.18rem;max-width:52ch;margin:0 0 30px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px}
+.hero-note{margin-top:18px;font-size:.92rem;font-weight:700;color:var(--spinach)}
+/* Service-window arch: photo framed like the truck's order window */
+.window{
+  position:relative;justify-self:center;width:min(430px,100%);
+}
+.window img{
+  width:100%;aspect-ratio:4/4.6;object-fit:cover;
+  border-radius:999px 999px 26px 26px;   /* the arch */
+  border:8px solid #fff;
+  box-shadow:var(--shadow-lift);
+}
+.window::before{ /* yolk sun behind the arch */
+  content:"";position:absolute;inset:auto -8% -6% auto;
+  width:62%;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle at 40% 38%,#ffd671 0 36%,var(--yolk) 37% 100%);
+  opacity:.9;z-index:-1;
+}
+.window-tag{
+  position:absolute;left:50%;bottom:-18px;transform:translateX(-50%);
+  background:var(--griddle);color:var(--butter);
+  font-weight:800;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;
+  padding:10px 20px;border-radius:999px;white-space:nowrap;
+  box-shadow:var(--shadow);
+}
+@media (max-width:880px){
+  .hero-grid{grid-template-columns:1fr;text-align:center}
+  .hero p.lede{margin-inline:auto}
+  .hero-ctas{justify-content:center}
+  .window{margin-top:8px}
+}
+
+/* ------------------------- Diner ticker (signature) --------------------- */
+.ticker{
+  background:var(--griddle);color:var(--butter);
+  overflow:hidden;padding:13px 0;
+  border-block:4px solid var(--yolk);
+}
+.ticker-track{display:flex;gap:0;width:max-content;animation:ticker 30s linear infinite}
+.ticker span{
+  font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.85rem;
+  padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:22px;
+}
+.ticker span::after{content:"●";color:var(--yolk);font-size:.7em}
+@keyframes ticker{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){
+  .ticker-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}
+}
+
+/* -------------------------------- Cards -------------------------------- */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+@media (max-width:960px){.grid-3,.grid-4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.grid-3,.grid-4{grid-template-columns:1fr}}
+
+.card{
+  background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);
+  overflow:hidden;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lift)}
+.card-body{padding:22px 24px 26px}
+.card-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.price{
+  font-family:var(--font-display);font-weight:800;font-size:1.15rem;color:var(--griddle);
+  background:#f8efe7;border-radius:999px;padding:4px 14px;flex:none;
+}
+.card p{margin:.5em 0 0;font-size:.98rem}
+
+/* Photo placeholder tiles (swap for real photos when available) */
+.dish-media{
+  aspect-ratio:4/3;display:grid;place-items:center;position:relative;
+  background:
+    radial-gradient(120% 90% at 15% 0%,#ffe9b8 0%,transparent 55%),
+    linear-gradient(160deg,#fff3d6,#ffe1a1);
+}
+.dish-media svg{width:76px;height:76px;color:var(--toast);opacity:.9}
+.dish-media .chip{
+  position:absolute;bottom:12px;right:12px;
+  font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  background:#fff;color:var(--toast);padding:5px 11px;border-radius:999px;
+  box-shadow:0 3px 8px rgba(42,26,16,.14);
+}
+.dish-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.dish-media.slim{aspect-ratio:21/8}
+.dish-media.slim svg{width:52px;height:52px}
+
+/* ------------------------------ Why us row ------------------------------ */
+.perk{
+  text-align:center;padding:30px 22px;background:var(--card);
+  border-radius:var(--radius);box-shadow:var(--shadow);
+  transition:transform .2s ease;
+}
+.perk:hover{transform:translateY(-4px)}
+.perk-icon{
+  width:64px;height:64px;margin:0 auto 16px;border-radius:50%;
+  background:#fbeeea;display:grid;place-items:center;color:var(--red);
+}
+.perk-icon svg{width:30px;height:30px}
+.perk h3{font-size:1.06rem;margin-bottom:.3em}
+.perk p{font-size:.92rem;margin:0}
+
+/* -------------------------------- About --------------------------------- */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.about-photo img{border-radius:var(--radius);box-shadow:var(--shadow-lift);aspect-ratio:4/3;object-fit:cover;width:100%}
+@media (max-width:880px){.about-grid{grid-template-columns:1fr}}
+
+/* ------------------------------- Reviews -------------------------------- */
+.review{padding:28px 26px;display:flex;flex-direction:column;gap:14px}
+.stars{color:var(--yolk);letter-spacing:3px;font-size:1.1rem}
+.review blockquote{margin:0;font-size:1rem;color:var(--toast)}
+.review cite{font-style:normal;font-weight:800;color:var(--griddle)}
+
+/* -------------------------------- Hours --------------------------------- */
+.hours-card{max-width:560px;margin:0 auto;padding:34px clamp(22px,4vw,44px)}
+.hours-card table{width:100%;border-collapse:collapse}
+.hours-card td{padding:11px 0;border-bottom:1px dashed var(--line);font-weight:700;color:var(--griddle)}
+.hours-card td:last-child{text-align:right;color:var(--toast)}
+.hours-card tr.closed td:last-child{color:var(--maple)}
+.hours-foot{font-size:.88rem;margin-top:16px}
+
+/* ------------------------------ Social band ----------------------------- */
+.social-band{background:var(--griddle);color:var(--butter);text-align:center}
+.social-band h2{color:var(--butter)}
+.social-icons{display:flex;justify-content:center;gap:18px;margin-top:26px}
+.social-icons a{
+  width:58px;height:58px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(255,246,229,.1);border:2px solid rgba(255,246,229,.35);
+  transition:background .2s ease,transform .2s ease;
+}
+.social-icons a:hover{background:var(--red);color:#fff;transform:translateY(-3px)}
+.social-icons svg{width:24px;height:24px}
+
+/* ----------------------------- Menu page bits --------------------------- */
+.page-hero{
+  background:var(--griddle);color:var(--butter);text-align:center;
+  padding:clamp(48px,7vw,84px) 0;
+}
+.page-hero h1{color:var(--butter)}
+.page-hero p{max-width:56ch;margin:0 auto 28px}
+.menu-cat{scroll-margin-top:90px}
+.cat-head{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+.cat-head h2{margin:0}
+.cat-head::after{content:"";flex:1;height:3px;border-radius:3px;background:var(--red)}
+.cat-jump{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:26px}
+.cat-jump a{
+  text-decoration:none;font-weight:800;font-size:.9rem;
+  border:2px solid rgba(255,246,229,.4);border-radius:999px;padding:8px 18px;color:var(--butter);
+  transition:background .2s,color .2s;
+}
+.cat-jump a:hover{background:var(--red);border-color:var(--red);color:#fff}
+
+/* ---------------------------- Contact page ------------------------------ */
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(26px,4vw,50px);align-items:start}
+@media (max-width:880px){.contact-grid{grid-template-columns:1fr}}
+.info-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px}
+.info-list li{display:flex;gap:14px;align-items:flex-start}
+.info-list svg{width:22px;height:22px;color:var(--spinach);flex:none;margin-top:3px}
+.info-list strong{color:var(--griddle)}
+.map-embed{border:0;width:100%;height:280px;border-radius:var(--radius);box-shadow:var(--shadow)}
+form.contact-form{display:flex;flex-direction:column;gap:16px;padding:30px clamp(20px,3vw,34px)}
+.contact-form label{font-weight:800;color:var(--griddle);font-size:.92rem;display:block;margin-bottom:6px}
+.contact-form input,.contact-form textarea{
+  width:100%;padding:13px 16px;border-radius:12px;border:2px solid var(--line);
+  font:inherit;color:var(--griddle);background:#fdf8f2;
+}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--red)}
+.contact-form textarea{min-height:130px;resize:vertical}
+
+/* -------------------------------- Footer -------------------------------- */
+.footer{background:var(--griddle);color:rgba(255,246,229,.85);padding:56px 0 30px;margin-top:0}
+.footer a{color:inherit;text-decoration:none}
+.footer a:hover{color:var(--yolk)}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:34px}
+@media (max-width:880px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.footer-grid{grid-template-columns:1fr}}
+.footer h3{color:var(--butter);font-size:1rem;margin-bottom:14px}
+.footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;font-size:.95rem}
+.footer .brand-name small{color:rgba(255,250,244,.7)}
+.footer-tagline{margin-top:14px;font-size:.95rem;max-width:30ch}
+.footer-bottom{
+  margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,246,229,.18);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.85rem;
+}
+
+/* --------------------------- Scroll reveal ------------------------------ */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+
+/* --------------------- Price-list cards & review extras ------------------ */
+.menu-list{padding:26px 28px}
+.menu-list h3{margin-bottom:14px}
+.menu-list ul{list-style:none;margin:0;padding:0}
+.menu-list li{display:flex;align-items:baseline;gap:10px;padding:9px 0;font-size:.98rem}
+.menu-list .leader{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px)}
+.menu-list .p{font-weight:800;color:var(--griddle);white-space:nowrap}
+.menu-list .note{font-size:.88rem;margin-top:12px}
+.cat-note{margin:-12px 0 26px;font-size:.95rem;max-width:60ch}
+.review-tags{display:flex;flex-wrap:wrap;gap:8px}
+.review-tags span{font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:#fbeeea;color:var(--red-deep);border-radius:999px;padding:5px 12px}
+.rec{font-size:.82rem;font-weight:700;color:var(--spinach);display:block;margin-top:2px}
+
+/* Landing-page logo */
+.hero-logo{
+  width:104px;height:104px;border-radius:50%;object-fit:cover;
+  display:block;margin:0 auto 18px;border:4px solid #fff;
+  box-shadow:0 10px 26px rgba(0,0,0,.35);
+}
+
+
+/* ---------------------- Video hero (all page headers) -------------------- */
+.video-hero{position:relative;overflow:hidden;background:var(--griddle)}
+.video-hero .hero-media{position:absolute;inset:0;z-index:0}
+.hero-media video,.hero-media img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-media::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(rgba(22,13,9,.60),rgba(22,13,9,.74));
+}
+.video-hero > .wrap{position:relative;z-index:1}
+.video-hero h1,.video-hero h2{color:#fff}
+.video-hero p,.video-hero .lede{color:rgba(255,250,244,.93)}
+.video-hero .eyebrow{color:var(--yolk)}
+.video-hero .hero-note{color:#ffd9a8}
+.video-hero .hero-note a{color:#ffd9a8}
+.video-hero .btn-outline{border-color:#fff;color:#fff}
+.video-hero .btn-outline:hover{background:#fff;color:var(--griddle)}
+
+/* Photos always paint above placeholder tiles; onerror removal reveals them */
+.dish-media img{z-index:2}
+
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main" style="position:absolute;left:-999px;top:8px;background:#fff;padding:10px 16px;border-radius:8px;z-index:99;font-weight:800" onfocus="this.style.left='8px'" onblur="this.style.left='-999px'">Skip to content</a>
+  <!-- ================= Navigation ================= -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html" aria-label="Breakfast by Al — home">
+        <!-- 4K logo master (for print/large use or to swap in here): https://d8j0ntlcm91z4.cloudfront.net/user_3GKLUFxvFEJD5S0xF3QTv1Tq7qp/hf_20260712_122802_0dc77de8-be48-48ad-a05b-45ff1b2c1887.png -->
+        <span class="brand-mark" aria-hidden="true"><img src="images/logo.png" alt="" onerror="this.remove()"></span>
+        <span class="brand-name">Breakfast <span class="by">by</span> <span class="al">AL</span><small>Newport News, VA</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-current="page">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="btn btn-primary" href="https://www.ubereats.com/store/breakfast-by-al/0iAMrgDERVirBv2kS1FAew" target="_blank" rel="noopener">Order Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= Page hero with primary CTA ================= -->
+    <section class="page-hero video-hero">
+      <div class="hero-media" aria-hidden="true">
+        <video autoplay muted loop playsinline poster="images/truck-hero.jpg" data-hero-video>
+          <!-- Cinematic truck loop (Higgsfield, generated from the owner's photo). Poster shows if the video can't load. -->
+          <source src="https://d8j0ntlcm91z4.cloudfront.net/user_3GKLUFxvFEJD5S0xF3QTv1Tq7qp/hf_20260712_221807_296974c7-023c-4808-b6c7-431e7994e3c2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="wrap">
+        <!-- Enhanced 4K logo master (Higgsfield upscale). Local crop is the fallback. -->
+        <img class="hero-logo" src="images/logo-emblem.jpg" alt="Breakfast by Al logo — the chef with the spatula" onerror="this.remove()">
+        <span class="eyebrow" style="color:var(--yolk)">Breakfast by Al · Newport News, VA</span>
+        <h1>Everything on the griddle</h1>
+        <p>Made to order, every time. Truck-menu prices shown — Uber Eats delivery prices may vary. You can also call or text your order ahead: <a href="tel:+17579989527" style="color:var(--yolk);font-weight:800">(757) 998-9527</a>.</p>
+        <a class="btn btn-primary btn-lg" href="https://www.ubereats.com/store/breakfast-by-al/0iAMrgDERVirBv2kS1FAew" target="_blank" rel="noopener">Order Now on Uber Eats</a>
+        <nav class="cat-jump" aria-label="Menu categories">
+          <a href="#sandwiches">Sandwiches</a>
+          <a href="#burritos">Burritos</a>
+          <a href="#omelets">Omelets</a>
+          <a href="#favorites">Favorites</a>
+          <a href="#addons">Add-Ons &amp; Sides</a>
+          <a href="#fillups">Fill Ups</a>
+          <a href="#lunch">Lunch Options</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ================= Sandwiches ================= -->
+    <section class="section menu-cat" id="sandwiches">
+      <div class="wrap">
+        <div class="cat-head reveal"><h2>Sandwiches</h2></div>
+        <p class="cat-note muted reveal">Served on daily-baked burillo rolls.</p>
+        <div class="grid-3">
+          <!-- To add a real photo to any card, replace the tile contents with:
+               <img src="images/your-photo.jpg" alt="Dish name" loading="lazy"> -->
+          <article class="card reveal">
+            <div class="dish-media slim">
+              <!-- AI-generated representation (Higgsfield) — replace with a real photo when available -->
+              <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GKLUFxvFEJD5S0xF3QTv1Tq7qp/hf_20260712_121803_41ca7ac7-418e-43af-bc61-1dd0637df495.png" alt="OG B-Fast Sando — bacon, egg and American cheese on a burillo roll" loading="lazy" onerror="this.remove()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9c0-3.3 4-5.5 9-5.5S21 5.7 21 9H3z"/><path d="M3 11h18"/><path d="M4 13.5h16v2.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2.5z"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>OG B-Fast Sando</h3><span class="price">$7</span></div>
+              <p>The original: hickory-smoked bacon or pork sausage, American cheese, and a fried-hard egg on a daily-baked burillo roll.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9c0-3.3 4-5.5 9-5.5S21 5.7 21 9H3z"/><path d="M3 11h18"/><path d="M4 13.5h16v2.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2.5z"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Turkey Bacon or Turkey Sausage, Egg &amp; Cheese</h3><span class="price">$8</span></div>
+              <p>Crispy smoked turkey bacon or a savory turkey sausage patty with American cheese and a fried-to-perfection egg.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9c0-3.3 4-5.5 9-5.5S21 5.7 21 9H3z"/><path d="M3 11h18"/><path d="M4 13.5h16v2.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2.5z"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>BLT</h3><span class="price">$7</span></div>
+              <p>Crispy hickory-smoked bacon, romaine lettuce, sliced tomato, and mayo on a toasted burillo roll.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9c0-3.3 4-5.5 9-5.5S21 5.7 21 9H3z"/><path d="M3 11h18"/><path d="M4 13.5h16v2.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2.5z"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>BLTT — Bacon, Lettuce, Tomato &amp; Turkey</h3><span class="price">$9</span></div>
+              <p>Crispy bacon, romaine lettuce, sliced tomato, and sliced deli turkey with mayo.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9c0-3.3 4-5.5 9-5.5S21 5.7 21 9H3z"/><path d="M3 11h18"/><path d="M4 13.5h16v2.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2.5z"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>BELT — Bacon, Egg, Lettuce &amp; Tomato</h3><span class="price">$8</span></div>
+              <p>Hickory-smoked bacon, a fried-hard egg, lettuce, sliced tomato, and mayo.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim">
+              <img src="images/best-sandwich.jpg" alt="BEST sandwich — bacon, egg, spinach and tomato on a toasted burillo roll" loading="lazy" style="object-position:50% 55%">
+            </div>
+            <div class="card-body">
+              <div class="card-row"><h3>BEST — Bacon, Egg, Spinach &amp; Tomato</h3><span class="price">$8</span></div>
+              <p>Hickory-smoked bacon, a fried-hard egg, fresh baby spinach, and sliced tomato.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9c0-3.3 4-5.5 9-5.5S21 5.7 21 9H3z"/><path d="M3 11h18"/><path d="M4 13.5h16v2.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2.5z"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>HEMB — Ham, Egg, Maple &amp; Swiss</h3><span class="price">$10</span></div>
+              <p>Grilled smoked ham, a fried-hard egg, and Swiss cheese with a maple drizzle on a burillo roll.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9c0-3.3 4-5.5 9-5.5S21 5.7 21 9H3z"/><path d="M3 11h18"/><path d="M4 13.5h16v2.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2.5z"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>BBQ Chicken Sandwich</h3><span class="price">$10</span></div>
+              <p>Marinated pulled chicken, bacon, and a fried egg with provolone cheese on a burillo roll.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Burritos ================= -->
+    <section class="section menu-cat" id="burritos" style="padding-top:0">
+      <div class="wrap">
+        <div class="cat-head reveal"><h2>Burritos</h2></div>
+        <p class="cat-note muted reveal">Served with a side of salsa and sour cream.</p>
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="dish-media slim">
+              <!-- AI-generated representation (Higgsfield) — replace with a real photo when available -->
+              <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GKLUFxvFEJD5S0xF3QTv1Tq7qp/hf_20260712_121811_0b994fa2-7bd0-456f-ad5e-058ee75c8587.png" alt="Breakfast burrito with sausage, bacon, egg, potato and cheese, salsa and sour cream on the side" loading="lazy" onerror="this.remove()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="8" rx="4"/><path d="M8 8v8M12 8v8"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Breakfast Burrito</h3><span class="price">$10</span></div>
+              <p>Sausage and bacon with onions, green peppers, potato, egg, and a cheese blend in a flour tortilla. All-turkey version $12.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="8" rx="4"/><path d="M8 8v8M12 8v8"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Turkey Twist</h3><span class="price">$14</span></div>
+              <p>Sliced grilled turkey, scrambled egg, cheese blend, tomato, potato, and sliced avocado.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Omelets ================= -->
+    <section class="section menu-cat" id="omelets" style="padding-top:0">
+      <div class="wrap">
+        <div class="cat-head reveal"><h2>Omelets</h2></div>
+        <p class="cat-note muted reveal">Served with toasted crostini bread.</p>
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="dish-media slim">
+              <!-- AI-generated representation (Higgsfield) — replace with a real photo when available -->
+              <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GKLUFxvFEJD5S0xF3QTv1Tq7qp/hf_20260712_121819_85c0216f-ffee-40f3-b127-c6dc914e640b.png" alt="Downtown omelet with bacon, sausage, veggies and provolone, served with toast" loading="lazy" onerror="this.remove()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="12" r="6.5"/><path d="M16.5 11.2 21 9.8"/><circle cx="10" cy="12" r="2.6"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Downtown Omelet</h3><span class="price">$12</span></div>
+              <p>Bacon and sausage with red onions, green peppers, mushrooms, tomatoes, and provolone cheese. All-turkey $14.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="12" r="6.5"/><path d="M16.5 11.2 21 9.8"/><circle cx="10" cy="12" r="2.6"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>The Loaded Veggie Omelet</h3><span class="price">$14</span></div>
+              <p>Egg whites with red onions, green peppers, mushrooms, tomatoes, spinach, and Swiss cheese.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="12" r="6.5"/><path d="M16.5 11.2 21 9.8"/><circle cx="10" cy="12" r="2.6"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Chicken Egg White</h3><span class="price">$15</span></div>
+              <p>Pulled chicken, spinach, and a cheese blend, topped with diced tomatoes and sliced avocado.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Favorites ================= -->
+    <section class="section menu-cat" id="favorites" style="padding-top:0">
+      <div class="wrap">
+        <div class="cat-head reveal"><h2>Favorites</h2></div>
+        <p class="cat-note muted reveal">The most-requested options on the truck.</p>
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="dish-media slim">
+              <img src="images/als-pancakes.jpg" alt="AL's golden pancakes fresh off the griddle" loading="lazy" style="object-position:50% 45%">
+            </div>
+            <div class="card-body">
+              <div class="card-row"><h3>Pancake or French Toast Combo</h3><span class="price">$13</span></div>
+              <p>One pancake or one French toast, two eggs your way, and your choice of meat.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c3.5 0 6.5 4.5 6.5 9a6.5 6.5 0 1 1-13 0C5.5 7.5 8.5 3 12 3z"/><circle cx="12" cy="13" r="2.6"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Smashed Avocado Sliders</h3><span class="price">$16</span></div>
+              <p>Two over-easy eggs atop fresh smashed avocado spread on toasted crostini bread, garnished with arugula, a side of tomatoes, a lemon wedge, and an olive-oil drizzle.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-1.2 14a3 3 0 0 1-3 2.8h.4a3 3 0 0 1-3-2.8L8 3z"/><path d="M8.6 10h6.8"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Power Up Parfait</h3><span class="price">$6</span></div>
+              <p>Greek yogurt, granola, and mixed-berry compote.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Add-Ons & Sides ================= -->
+    <section class="section menu-cat" id="addons" style="padding-top:0">
+      <div class="wrap">
+        <div class="cat-head reveal"><h2>Add-Ons &amp; Sides</h2></div>
+        <div class="grid-3">
+          <div class="card menu-list reveal">
+            <h3>Add-Ons</h3>
+            <ul>
+              <li>Extra bacon or sausage<span class="leader"></span><span class="p">$3</span></li>
+              <li>Fried potatoes or hash-brown patty<span class="leader"></span><span class="p">$4</span></li>
+              <li>Sub egg whites<span class="leader"></span><span class="p">$3</span></li>
+              <li>Sliced avocado<span class="leader"></span><span class="p">$2</span></li>
+              <li>Blueberries or chocolate chips<span class="leader"></span><span class="p">$2</span></li>
+              <li>Crushed Oreos<span class="leader"></span><span class="p">$2</span></li>
+              <li>Slice of cheese<span class="leader"></span><span class="p">$2</span></li>
+            </ul>
+          </div>
+          <div class="card menu-list reveal">
+            <h3>Sides</h3>
+            <ul>
+              <li>Just bacon or sausage<span class="leader"></span><span class="p">$5</span></li>
+              <li>Just fried potatoes or hash-brown patty<span class="leader"></span><span class="p">$4</span></li>
+              <li>Just eggs, your way<span class="leader"></span><span class="p">$4</span></li>
+              <li>Two pancakes or two French toast<span class="leader"></span><span class="p">$7</span></li>
+            </ul>
+          </div>
+          <div class="card menu-list reveal">
+            <h3>Lunch Sides &amp; Dips</h3>
+            <ul>
+              <li>Fries<span class="leader"></span><span class="p">$3</span></li>
+              <li>Mozzarella sticks (8) with marinara<span class="leader"></span><span class="p">$7</span></li>
+              <li>Fried pickles (6)<span class="leader"></span><span class="p">$3</span></li>
+              <li>Fried peppers<span class="leader"></span><span class="p">$3</span></li>
+              <li>Jalapeños or banana peppers, with ranch<span class="leader"></span><span class="p">$3</span></li>
+            </ul>
+            <p class="note muted">Dips: ranch, chipotle ranch, BBQ, honey mustard, buffalo (hot or mild).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Fill Ups ================= -->
+    <section class="section menu-cat" id="fillups" style="padding-top:0">
+      <div class="wrap">
+        <div class="cat-head reveal"><h2>Fill Ups</h2></div>
+        <p class="cat-note muted reveal">Feeling hungry? Allow about a 15-minute wait, depending on location.</p>
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9c0-3.3 4-5.5 9-5.5S21 5.7 21 9H3z"/><path d="M3 11h18"/><path d="M4 13.5h16v2.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2.5z"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Breakfast Club Sandwich</h3><span class="price">$16</span></div>
+              <p>Sliced turkey, bacon, sausage, egg, cheese, lettuce, tomato, red onion, and mayo on a toasted burillo roll with a side of fried potatoes. All-turkey $18.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim">
+              <!-- Real photo from @breakfastbyal on Instagram -->
+              <img src="images/french-toast-platter.jpg" alt="French toast platter with scrambled eggs, bacon, and sausage" loading="lazy" style="object-position:50% 45%">
+            </div>
+            <div class="card-body">
+              <div class="card-row"><h3>Pancake or French Toast Platter</h3><span class="price">$16</span></div>
+              <p>Two pancakes or two French toast, two eggs your way, your choice of meat, and a side of fried potatoes.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Lunch Options ================= -->
+    <section class="section menu-cat" id="lunch" style="padding-top:0">
+      <div class="wrap">
+        <div class="cat-head reveal"><h2>Lunch Options</h2></div>
+        <p class="cat-note muted reveal">Breakfast by Al at lunchtime — rearranging your tastebuds one bite at a time.</p>
+
+        <h3 class="reveal" style="margin:6px 0 18px;font-size:1.35rem">Quesadillas</h3>
+        <p class="cat-note muted reveal">Served with hash and a side of salsa and sour cream. Egg whites available, add $2.</p>
+        <div class="grid-4">
+          <article class="card reveal">
+            <div class="dish-media slim">
+              <img src="images/veggie-quesadilla.jpg" alt="Veggie quesadilla with seasoned fried potatoes" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-row"><h3>Veggie</h3><span class="price">$13</span></div>
+              <p>Spinach, onions, green peppers, mushrooms, tomatoes, cheese blend, and scrambled egg.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19 21 5v14H3z"/><path d="M8 15.5h.01M12 13h.01M15 16h.01"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Smoked Ham &amp; Bacon</h3><span class="price">$14</span></div>
+              <p>Smoked ham, crispy bacon, scrambled egg, cheese blend, and tomatoes on a toasted flour tortilla.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19 21 5v14H3z"/><path d="M8 15.5h.01M12 13h.01M15 16h.01"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Smoked Turkey &amp; Bacon</h3><span class="price">$15</span></div>
+              <p>Smoked turkey, crispy bacon, scrambled egg, cheese blend, and tomatoes on a toasted flour tortilla.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim">
+              <img src="images/turkey-bacon-egg-white-quesadilla.jpg" alt="Turkey bacon egg white quesadilla" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-row"><h3>Turkey Bacon Egg White</h3><span class="price">$16</span></div>
+              <p>Turkey bacon, scrambled egg whites, spinach, cheese blend, and tomatoes on a toasted flour tortilla.</p>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="reveal" style="margin:34px 0 18px;font-size:1.35rem">Wraps, Chicken &amp; The Grill</h3>
+        <div class="grid-4">
+          <article class="card reveal">
+            <div class="dish-media slim">
+              <img src="images/buffalo-chicken-philly-wrap.jpg" alt="Mini buffalo chicken philly wrap" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-row"><h3>Mini Buffalo Chicken Philly Wrap</h3><span class="price">$7</span></div>
+              <p>Pulled chicken, lettuce, onions, green peppers, tomatoes, and mayo rolled in a toasted flour tortilla.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim">
+              <!-- Real photo from @breakfastbyal on Instagram: sweet Thai chili tossed tenders -->
+              <img src="images/sweet-thai-chili-tenders.jpg" alt="Sweet Thai chili tossed chicken tenders with seasoned fries" loading="lazy" style="object-position:50% 40%">
+            </div>
+            <div class="card-body">
+              <div class="card-row"><h3>Chicken Tenders</h3><span class="price">$10</span></div>
+              <p>Four hand-breaded tenders with dipping sauce. Get them tossed — wet: buffalo (hot or mild), BBQ (regular or honey), mango habanero; dry: Old Bay, lemon pepper, Cajun, or regular.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 15c-2.5-1-3.5-4.5-1.5-7S11 5 12 7c1-2 4.5-1.5 6.5 1s1 6-1.5 7"/><path d="M6 15h12l-1 5H7l-1-5z"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Wings</h3><span class="price">8 / $12</span></div>
+              <p>12 for $16 · 16 for $20, in the same wet or dry flavors as the tenders. Game-day platters of 60 or 100 wings — call for details.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9c0-2.8 3.6-5 8-5s8 2.2 8 5H4z"/><path d="M4 12h16M4 15h16"/><path d="M5 18h14"/></svg><span class="chip">Photo coming soon</span></div>
+            <div class="card-body">
+              <div class="card-row"><h3>Cheeseburger</h3><span class="price">$8</span></div>
+              <p>Patty, American cheese, lettuce, tomato, and mayo on a grilled bun, with a side of fries.</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="dish-media slim">
+              <img src="images/chicken-quesadilla.jpg" alt="Chicken quesadilla with seasoned fries" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-row"><h3>Chicken Quesadilla</h3><span class="price">$6</span></div>
+              <p>Seasoned chicken, red onions, green peppers, and a cheese blend on a flour tortilla.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Bottom CTA ================= -->
+    <section class="section social-band">
+      <div class="wrap reveal">
+        <h2>Hungry yet?</h2>
+        <p class="muted">Order for delivery on Uber Eats, or call or text your order ahead: <a href="tel:+17579989527" style="color:var(--yolk);font-weight:800">(757) 998-9527</a>.</p>
+        <a class="btn btn-primary btn-lg" href="https://www.ubereats.com/store/breakfast-by-al/0iAMrgDERVirBv2kS1FAew" target="_blank" rel="noopener" style="margin-top:18px">Order Now on Uber Eats</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="Breakfast by Al — home">
+            <!-- 4K logo master (for print/large use or to swap in here): https://d8j0ntlcm91z4.cloudfront.net/user_3GKLUFxvFEJD5S0xF3QTv1Tq7qp/hf_20260712_122802_0dc77de8-be48-48ad-a05b-45ff1b2c1887.png -->
+        <span class="brand-mark" aria-hidden="true"><img src="images/logo.png" alt="" onerror="this.remove()"></span>
+            <span class="brand-name">Breakfast <span class="by">by</span> <span class="al">AL</span></span>
+          </a>
+          <p class="footer-tagline">Serving fresh breakfast every day.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://www.ubereats.com/store/breakfast-by-al/0iAMrgDERVirBv2kS1FAew" target="_blank" rel="noopener">Order on Uber Eats</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <ul>
+            <li>Tue–Sun: 8 AM – 3 PM</li>
+            <li>Monday: Closed</li>
+            <li>Jefferson Ave, Newport News, VA</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="tel:+17579989527">(757) 998-9527</a></li>
+            <li><a href="mailto:thedtcafe@gmail.com">thedtcafe@gmail.com</a></li>
+            <li><a href="https://www.facebook.com/p/Breakfast-by-Al-at-Lunchtime-61566742389870/" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://www.instagram.com/breakfastbyal" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Breakfast by Al. All rights reserved.</span>
+        <span>Newport News, Virginia</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+// Breakfast by Al — shared behavior
+(function () {
+  // Mobile navigation toggle
+  var toggle = document.querySelector('.nav-toggle');
+  var links = document.querySelector('.nav-links');
+  if (toggle && links) {
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    // Close the menu after tapping a link (mobile)
+    links.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // Sticky nav shadow once the page scrolls
+  var nav = document.querySelector('.nav');
+  function onScroll() {
+    if (nav) nav.classList.toggle('scrolled', window.scrollY > 8);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Scroll-triggered reveals (skipped if the user prefers reduced motion)
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = document.querySelectorAll('.reveal');
+  if (!reduce && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.12 });
+    items.forEach(function (el) { io.observe(el); });
+  } else {
+    items.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  // Respect reduced motion: stop the hero background video
+  var heroVid = document.querySelector('[data-hero-video]');
+  if (heroVid && reduce) { heroVid.removeAttribute('autoplay'); heroVid.pause(); }
+
+  // Current year in the footer
+  var yr = document.querySelector('[data-year]');
+  if (yr) yr.textContent = new Date().getFullYear();
+})();
+
+  </script>
+</body>
+</html>
